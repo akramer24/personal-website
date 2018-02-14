@@ -1,8 +1,27 @@
 import React from 'react';
-import { Route, Switch, Router } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (
-   <h3>home</h3>
+    <div id="home">
+      <NavLink to="/about" className="home-image-container">
+        <img src="/difara.JPEG" className="home-image" />
+        <div className="middle">
+          <div className="home-image-text">About Me</div>
+        </div>
+      </NavLink>
+      <NavLink to="/resume" className="home-image-container">
+        <img src="/me.jpeg" className="home-image" />
+        <div className="middle">
+          <div className="home-image-text">Resume</div>
+        </div>
+      </NavLink>
+      <NavLink to="/projects" className="home-image-container">
+        <img src="/coding.jpg" className="home-image" />
+        <div className="middle">
+          <div className="home-image-text">Projects</div>
+        </div>
+      </NavLink>
+    </div>
   )
 }

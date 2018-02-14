@@ -24,6 +24,7 @@ export default function About() {
           and stand inside the Yankees' clubhouse. I lived both those dreams as a sports reporter for Newsday and remained
           conscious to remember them forever.
         </p>
+        <div id="cano-parallax"></div>
         <p>
           Journalism will always have a special place in my heart and memory. As a freshman at Binghamton University, I joined
           the student paper as a track and field beat writer and eventually ascended the hierarchy to sports editor as a senior.
@@ -45,6 +46,7 @@ export default function About() {
           career, however. While working for Newsday, I seriously looked into transitioning to TV and marketing. I even got
           accepted into the NYC Teaching Fellowship. None of those fields captivated me enough.
         </p>
+        <div id="presentation-parallax"></div>
         <p>
           Then I started writing JavaScript on Codecademy.
         </p>
