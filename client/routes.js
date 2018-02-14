@@ -1,10 +1,9 @@
 import React from 'react';
 import { Route, Switch, Router } from 'react-router-dom';
 import history from './history';
-import { Main, NavBar, Home, About, Resume, Projects } from './components';
+import { Main, NavBar, Home, About, Resume, AllProjects, Brackapptology, Bickr } from './components';
 
 export default function Routes(props) {
-  const { children } = props;
 
   return (
     <Router history={history}>
@@ -13,7 +12,9 @@ export default function Routes(props) {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
-          <Route path="/projects" component={Projects} />
+          <Route exact path="/projects" component={AllProjects} />
+          <Route path="/projects/brackapptology" component={Brackapptology} />
+          <Route path="/projects/bickr" component={Bickr} />
         </Switch>
       </Main>
     </Router>

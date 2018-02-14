@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 
 export default function Resume() {
   return (
-    <div id="resume-container">
+    <div className="page-container">
       <Col id="resume" md={6} sm={8} xs={12}>
         <div id="resume-header">
           <h1>Ari Kramer</h1>
@@ -24,8 +24,8 @@ export default function Resume() {
         <div id="resume-body">
           <div id="resume-technologies">
             <h3>TECHNOLOGIES</h3>
-            <p>Proficient: JavaScript, React, Redux, Express, Sequelize, Node, HTML, CSS, Git</p>
-            <p>Familiar: jQuery, Cheerio, Mocha, Chai, SQL, SEO, Request-Promise, Socket.io</p>
+            <p><span className="bold">Proficient:</span> JavaScript, React, Redux, Express, Sequelize, Node, HTML, CSS, Git</p>
+            <p><span className="bold">Familiar:</span> jQuery, Cheerio, Mocha, Chai, SQL, SEO, Request-Promise, Socket.io</p>
           </div>
           <div id="resume-projects">
             <h3>PROJECTS</h3>
@@ -93,9 +93,8 @@ export default function Resume() {
           <div id="resume-education">
             <h3>EDUCATION</h3>
             <div className="resume-item">
+              <p className="resume-company">Fullstack Academy</p>
               <div className="resume-sub-header">
-                <p className="resume-sub-header-item">Fullstack Academy</p>
-                <p>|</p>
                 <p className="resume-sub-header-item">Feb. 2018</p>
               </div>
               <ul>
@@ -103,9 +102,8 @@ export default function Resume() {
               </ul>
             </div>
             <div className="resume-item">
+              <p className="resume-company">Binghamton University</p>
               <div className="resume-sub-header">
-                <p className="resume-sub-header-item">Binghamton University</p>
-                <p>|</p>
                 <p className="resume-sub-header-item">May 2014</p>
               </div>
               <ul>
