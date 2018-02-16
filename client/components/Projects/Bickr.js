@@ -3,11 +3,11 @@ import { Col, Carousel } from 'react-bootstrap';
 
 export default function Bickr() {
   return (
-    <div className="page-container">
+    <div className="page page-container animated fadeIn">
       <Col md={6} sm={8} xs={12}>
-        <div id="bickr-header">
+        <div className="project-header">
           <h3>Bickr <small><a target="_blank" href="https://bicker.herokuapp.com/">(Try it here)</a></small></h3>
-          <p>A live-stream debate app.</p>
+          <p className="project-subheader">A live-stream debate app.</p>
         </div>
         <Carousel>
           <Carousel.Item>
@@ -20,9 +20,9 @@ export default function Bickr() {
             <img src="/bickr-ss-3.png" />
           </Carousel.Item>
         </Carousel>
-        <div id="bickr-body">
+        <div className="project-body">
           <p><span className="bold">Collaborators: </span>Abe Johnson, Max Legocki, Shayan Sheikh</p>
-          <h5>Why did we build this app?</h5>
+          <h5 className="project-section-head">Why did we build this app?</h5>
           <p>
             I had the privilege of working with three enthusiastic, fun partners on this project, our Capstone at Fullstack Academy. As we brainstormed
             ideas for what to build, nothing captivated us quite like Bickr. We knew we were in for a challenge -- none of us had ever worked on
@@ -36,12 +36,13 @@ export default function Bickr() {
           <p>
             We thought we could bridge the two: users can sign up and create a channel, and others can tune in to either join or watch the debate and vote for a winner.
           </p>
-          <h5>How does it work?</h5>
+          <h5 className="project-section-head">How does it work?</h5>
           <p>
             React-Redux renders the client-side, and we store our user and channel data using PostgreSQL and sequelize.
             Bickr relies heavily on users having synchronized data, so to achieve fluidity in our application we utilized
             web-sockets as well as webRTC to create peer-to-peer live video streaming.
           </p>
+          <br />
         </div>
       </Col>
     </div>

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div id="home">
+    <div id="home" className="page animated fadeIn">
       <NavLink to="/about" className="home-image-container">
         <img src="/difara.JPEG" className="home-image" />
         <div className="middle">

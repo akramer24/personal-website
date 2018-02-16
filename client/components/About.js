@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap';
 
 export default function About() {
   return (
-    <div id="about">
+    <div id="about" className="page animated fadeIn">
       <Col id="about-header" md={6} sm={8} xs={12}>
         <h1>Hi, I'm Ari Kramer</h1>
         <h3>Thanks for visiting my website</h3>
@@ -24,12 +24,12 @@ export default function About() {
           and stand inside the Yankees' clubhouse. I lived both those dreams as a sports reporter for Newsday and remained
           conscious to remember them forever.
         </p>
-        <div id="cano-parallax"></div>
+        <img src="cano.png" id="cano" />
         <p>
           Journalism will always have a special place in my heart and memory. As a freshman at Binghamton University, I joined
           the student paper as a track and field beat writer and eventually ascended the hierarchy to sports editor as a senior.
           Binghamton did not have a journalism program, but I read constantly and incorporated styles and techniques
-          I gleaned from my favorite writers as I wrote stories of my own. 
+          I gleaned from my favorite writers as I wrote stories of my own.
         </p>
         <p>
           When I graduated in 2014, I landed a job with Newsday. I worked alongside reporters with degrees from the country's
@@ -46,13 +46,13 @@ export default function About() {
           career, however. While working for Newsday, I seriously looked into transitioning to TV and marketing. I even got
           accepted into the NYC Teaching Fellowship. None of those fields captivated me enough.
         </p>
-        <div id="presentation-parallax"></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7uFhanTKc2Q" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
         <p>
           Then I started writing JavaScript on Codecademy.
         </p>
         <p>
           I got hooked instantly. As I spoke to my software developer friends and researched the field, I became even more
-          passionate about a career as an engineer. I learned that my creativity, persistence and precision as a writer would
+          passionate about a career as an engineer. I learned that the creativity, persistence and precision I cultivated as a writer would
           be required every day. That excited me. Those traits helped make me a great reporter, and they have propelled me
           through the early stages of my coding journey.
         </p>

@@ -5,7 +5,7 @@ import navTo from '../../utils/navTo';
 export default function AllProjects() {
 
   return (
-    <div id="all-projects-container" >
+    <div id="all-projects-container" className="page animated fadeIn">
       <Col md={6} sm={8} xs={12}>
         <div id="all-projects-header">
           <h3>These are my projects.</h3>
@@ -13,7 +13,7 @@ export default function AllProjects() {
             For more detailed information on each one, please click anywhere on the imamge or description.
             </p>
         </div>
-        <Carousel>
+        <Carousel className="carousel-body">
           <Carousel.Item onClick={() => navTo('/projects/brackapptology')}>
             <img src="/brackapptology-ss-1.jpeg" />
             <Carousel.Caption>

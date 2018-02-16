@@ -21,6 +21,11 @@ export default function NavBar() {
           <MenuItem eventKey={3.3} onClick={() => navTo('/projects/bickr')}>Bickr</MenuItem>
         </NavDropdown>
       </Nav>
+      <Nav pullRight>
+        <NavItem eventKey={4} href="https://github.com/akramer24" target="_blank"><img src="github.svg" className="navbar-svg" /></NavItem>
+        <NavItem eventKey={5} href="https://www.linkedin.com/in/arikramer/" target="_blank"><img src="linkedin.svg" className="navbar-svg" /></NavItem>
+        <NavItem eventKey={6} href="https://twitter.com/Ari_Kramer" target="_blank"><img src="twitter.svg" className="navbar-svg" /></NavItem>
+      </Nav>
     </Navbar>
   )
 }

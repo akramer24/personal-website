@@ -4,9 +4,9 @@ import { Col } from 'react-bootstrap';
 
 export default function Resume() {
   return (
-    <div className="page-container">
+    <div className="page page-container animated fadeIn">
       <Col id="resume" md={6} sm={8} xs={12}>
-        <div id="resume-header">
+        <div id="resume-header" className="animated zoomIn">
           <h1>Ari Kramer</h1>
           <div className="resume-sub-header">
             <p className="resume-sub-header-item">Bronx, NY</p>
@@ -22,13 +22,13 @@ export default function Resume() {
           </div>
         </div>
         <div id="resume-body">
-          <div id="resume-technologies">
-            <h3>TECHNOLOGIES</h3>
+          <div id="resume-technologies" className="animated fadeInLeft">
+            <h3 className="resume-section-head">TECHNOLOGIES</h3>
             <p><span className="bold">Proficient:</span> JavaScript, React, Redux, Express, Sequelize, Node, HTML, CSS, Git</p>
             <p><span className="bold">Familiar:</span> jQuery, Cheerio, Mocha, Chai, SQL, SEO, Request-Promise, Socket.io</p>
           </div>
-          <div id="resume-projects">
-            <h3>PROJECTS</h3>
+          <div id="resume-projects" className="animated fadeInLeft">
+            <h3 className="resume-section-head">PROJECTS</h3>
             <div className="resume-item">
               <a target="_blank" className="resume-company" href="https://brackapptology.herokuapp.com/">Brackapptology</a>
               <div className="resume-sub-header">
@@ -55,8 +55,8 @@ export default function Resume() {
               </ul>
             </div>
           </div>
-          <div id="resume-experience">
-            <h3>EXPERIENCE</h3>
+          <div id="resume-experience" className="animated fadeInLeft">
+            <h3 className="resume-section-head">EXPERIENCE</h3>
             <div className="resume-item">
               <p className="resume-company">Newsday</p>
               <div className="resume-sub-header">
@@ -90,8 +90,8 @@ export default function Resume() {
               </ul>
             </div>
           </div>
-          <div id="resume-education">
-            <h3>EDUCATION</h3>
+          <div id="resume-education" className="animated fadeInLeft">
+            <h3 className="resume-section-head">EDUCATION</h3>
             <div className="resume-item">
               <p className="resume-company">Fullstack Academy</p>
               <div className="resume-sub-header">
@@ -109,6 +109,8 @@ export default function Resume() {
               <ul>
                 <li>B.A. in English | Tony Kornheiser Scholarship Recipient</li>
               </ul>
+              <br />
+              <br />
             </div>
           </div>
         </div>

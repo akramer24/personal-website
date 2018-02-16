@@ -8,7 +8,7 @@ export default function Main(props) {
       <NavBar />
       {children}
       <div id="footer">
-        <p id="footer-text">Built by Ari Kramer in 2018</p>
+        <p id="footer-text">&copy; Ari Kramer, 2018</p>
       </div>
     </div>
   )

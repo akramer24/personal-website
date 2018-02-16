@@ -3,11 +3,11 @@ import { Col, Carousel } from 'react-bootstrap';
 
 export default function Brackapptology() {
   return (
-    <div className="page-container">
+    <div className="page page-container animated fadeIn">
       <Col md={6} sm={8} xs={12}>
-        <div id="brackapptology-header">
+        <div className="project-header">
           <h3>Brackapptology <small><a target="_blank" href="https://brackapptology.herokuapp.com/">(Try it here)</a></small></h3>
-          <p>A web app for comparing NCAA Tournament resumes and projecting the field.</p>
+          <p className="project-subheader">A web app for comparing NCAA Tournament resumes and projecting the field.</p>
         </div>
         <Carousel>
           <Carousel.Item>
@@ -17,8 +17,8 @@ export default function Brackapptology() {
             <img src="/brackapptology-ss-2.png" />
            </Carousel.Item>
         </Carousel>
-        <div id="brackapptology-body">
-          <h5>Why did I build this app?</h5>
+        <div className="project-body">
+          <h5 className="project-section-head">Why did I build this app?</h5>
           <p>
             In my previous life as a Newsday sports reporter, I regularly compiled a bracketology in the weeks preceding the NCAA Tournament.
             There was always something exciting about forecasting how the bracket would look on Selection Sunday, after the selection committee had
@@ -31,7 +31,7 @@ export default function Brackapptology() {
           <p>
             Brackapptology aimed to make things more convenient for bracketologists.
           </p>
-          <h5>How does it work?</h5>
+          <h5 className="project-section-head">How does it work?</h5>
           <p>
             I use Cheerio and Request-Promise to scrape relevant data from several websites. That data gets saved to my PostgreSQL database every hour,
             making sure numbers are always up to date. Whenever a user lands on my site, I fetch all that data from the database in one quick call and
@@ -41,6 +41,7 @@ export default function Brackapptology() {
             Visitors are prompted to log-in immediately so they can save their projections to my database upon submission. Any logged-in user can revisit
             and share old brackets from his or her user page.
           </p>
+          <br />
         </div>
       </Col>
     </div>
