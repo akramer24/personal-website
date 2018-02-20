@@ -31717,7 +31717,7 @@ var About = function (_React$Component) {
             null,
             'As a duo, those factors made long-term career prospects bleak. I was not willing to leave journalism for just any career, however. While working for Newsday, I seriously looked into transitioning to TV and marketing. I even got accepted into the NYC Teaching Fellowship. None of those fields captivated me enough.'
           ),
-          _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/7uFhanTKc2Q', frameBorder: '0', allow: 'autoplay; encrypted-media', allowFullScreen: true }),
+          _react2.default.createElement('iframe', { id: 'about-video', src: 'https://www.youtube.com/embed/7uFhanTKc2Q', frameBorder: '0', allow: 'autoplay; encrypted-media', allowFullScreen: true }),
           _react2.default.createElement(
             'p',
             null,
@@ -43348,7 +43348,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function NavBar() {
   return _react2.default.createElement(
     _reactBootstrap.Navbar,
-    { id: 'navbar' },
+    { id: 'navbar', collapseOnSelect: true },
     _react2.default.createElement(
       _reactBootstrap.Navbar.Header,
       null,
@@ -43360,68 +43360,73 @@ function NavBar() {
           { to: '/' },
           'Ari Kramer'
         )
-      )
+      ),
+      _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
     ),
     _react2.default.createElement(
-      _reactBootstrap.Nav,
+      _reactBootstrap.Navbar.Collapse,
       null,
       _react2.default.createElement(
-        _reactBootstrap.NavItem,
-        { eventKey: 1, onClick: function onClick() {
-            return (0, _navTo2.default)('/about');
-          } },
-        'About Me'
-      ),
-      _react2.default.createElement(
-        _reactBootstrap.NavItem,
-        { eventKey: 2, onClick: function onClick() {
-            return (0, _navTo2.default)('/resume');
-          } },
-        'Resume'
-      ),
-      _react2.default.createElement(
-        _reactBootstrap.NavDropdown,
-        { eventKey: 3, title: 'Projects', id: 'basic-nav-dropdown' },
+        _reactBootstrap.Nav,
+        null,
         _react2.default.createElement(
-          _reactBootstrap.MenuItem,
-          { eventKey: 3.1, onClick: function onClick() {
-              return (0, _navTo2.default)('/projects');
+          _reactBootstrap.NavItem,
+          { eventKey: 1, onClick: function onClick() {
+              return (0, _navTo2.default)('/about');
             } },
-          'All'
+          'About Me'
         ),
         _react2.default.createElement(
-          _reactBootstrap.MenuItem,
-          { eventKey: 3.2, onClick: function onClick() {
-              return (0, _navTo2.default)('/projects/brackapptology');
+          _reactBootstrap.NavItem,
+          { eventKey: 2, onClick: function onClick() {
+              return (0, _navTo2.default)('/resume');
             } },
-          'Brackapptology'
+          'Resume'
         ),
         _react2.default.createElement(
-          _reactBootstrap.MenuItem,
-          { eventKey: 3.3, onClick: function onClick() {
-              return (0, _navTo2.default)('/projects/bickr');
-            } },
-          'Bickr'
+          _reactBootstrap.NavDropdown,
+          { eventKey: 3, title: 'Projects', id: 'basic-nav-dropdown' },
+          _react2.default.createElement(
+            _reactBootstrap.MenuItem,
+            { eventKey: 3.1, onClick: function onClick() {
+                return (0, _navTo2.default)('/projects');
+              } },
+            'All'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.MenuItem,
+            { eventKey: 3.2, onClick: function onClick() {
+                return (0, _navTo2.default)('/projects/brackapptology');
+              } },
+            'Brackapptology'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.MenuItem,
+            { eventKey: 3.3, onClick: function onClick() {
+                return (0, _navTo2.default)('/projects/bickr');
+              } },
+            'Bickr'
+          )
         )
-      )
-    ),
-    _react2.default.createElement(
-      _reactBootstrap.Nav,
-      { pullRight: true },
-      _react2.default.createElement(
-        _reactBootstrap.NavItem,
-        { eventKey: 4, href: 'https://github.com/akramer24', target: '_blank' },
-        _react2.default.createElement('img', { src: 'github.svg', className: 'navbar-svg' })
       ),
       _react2.default.createElement(
-        _reactBootstrap.NavItem,
-        { eventKey: 5, href: 'https://www.linkedin.com/in/arikramer/', target: '_blank' },
-        _react2.default.createElement('img', { src: 'linkedin.svg', className: 'navbar-svg' })
-      ),
-      _react2.default.createElement(
-        _reactBootstrap.NavItem,
-        { eventKey: 6, href: 'https://twitter.com/Ari_Kramer', target: '_blank' },
-        _react2.default.createElement('img', { src: 'twitter.svg', className: 'navbar-svg' })
+        _reactBootstrap.Nav,
+        { pullRight: true },
+        _react2.default.createElement(
+          _reactBootstrap.NavItem,
+          { eventKey: 4, href: 'https://github.com/akramer24', target: '_blank' },
+          _react2.default.createElement('img', { src: 'github.svg', className: 'navbar-svg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.NavItem,
+          { eventKey: 5, href: 'https://www.linkedin.com/in/arikramer/', target: '_blank' },
+          _react2.default.createElement('img', { src: 'linkedin.svg', className: 'navbar-svg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.NavItem,
+          { eventKey: 6, href: 'https://twitter.com/Ari_Kramer', target: '_blank' },
+          _react2.default.createElement('img', { src: 'twitter.svg', className: 'navbar-svg' })
+        )
       )
     )
   );

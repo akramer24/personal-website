@@ -6,7 +6,7 @@ import navTo from '../utils/navTo';
 
 export default function NavBar() {
   return (
-    <Navbar id="navbar">
+    <Navbar id="navbar" collapseOnSelect>
       <Navbar.Header>
         <Navbar.Brand>
           <NavLink to="/">Ari Kramer</NavLink>

@@ -288,6 +288,20 @@ p {
 
 @media only screen and (max-width: 767px) {
   .page {
-    padding-top: 350px;
+    padding-top: 55px;
+  }
+
+  .home-image-container {
+    width: 90%;
+    opacity: 1;
+  }
+
+  .middle {
+    opacity: 1;
+  }
+
+  #about-video {
+    width: 90%;
+    height: 315px;
   }
 }
