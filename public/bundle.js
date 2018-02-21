@@ -31717,7 +31717,11 @@ var About = function (_React$Component) {
             null,
             'As a duo, those factors made long-term career prospects bleak. I was not willing to leave journalism for just any career, however. While working for Newsday, I seriously looked into transitioning to TV and marketing. I even got accepted into the NYC Teaching Fellowship. None of those fields captivated me enough.'
           ),
-          _react2.default.createElement('iframe', { id: 'about-video', src: 'https://www.youtube.com/embed/7uFhanTKc2Q', frameBorder: '0', allow: 'autoplay; encrypted-media', allowFullScreen: true }),
+          _react2.default.createElement(
+            'div',
+            { id: 'about-video-container' },
+            _react2.default.createElement('iframe', { id: 'about-video', src: 'https://www.youtube.com/embed/7uFhanTKc2Q', frameBorder: '0', allow: 'autoplay; encrypted-media', allowFullScreen: true })
+          ),
           _react2.default.createElement(
             'p',
             null,

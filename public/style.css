@@ -89,6 +89,11 @@ p {
   text-shadow: 1px 1px 2px grey;
 }
 
+#about-video-container {
+  display: flex;
+  flex-direction: column;
+}
+
 #cano {
   height: 300px;
   float: left;
@@ -110,6 +115,12 @@ p {
   background-attachment: fixed;
   background-position: 50% 64%;
   background-repeat: no-repeat;
+}
+
+#about-video {
+  width: 90%;
+  height: 315px;
+  align-self: center;
 }
 
 /************************RESUME**********************/
@@ -298,10 +309,5 @@ p {
 
   .middle {
     opacity: 1;
-  }
-
-  #about-video {
-    width: 90%;
-    height: 315px;
   }
 }

@@ -52,7 +52,9 @@ export default class About extends React.Component {
             career, however. While working for Newsday, I seriously looked into transitioning to TV and marketing. I even got
             accepted into the NYC Teaching Fellowship. None of those fields captivated me enough.
           </p>
-          <iframe id="about-video" src="https://www.youtube.com/embed/7uFhanTKc2Q" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          <div id="about-video-container">
+            <iframe id="about-video" src="https://www.youtube.com/embed/7uFhanTKc2Q" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          </div>
           <p>
             Then I started writing JavaScript on Codecademy.
           </p>
