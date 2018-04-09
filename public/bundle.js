@@ -44012,7 +44012,7 @@ var Resume = function (_React$Component) {
                   { className: 'bold' },
                   'Proficient:'
                 ),
-                ' JavaScript, React, Redux, Express, Sequelize, Node, HTML, CSS, Git'
+                ' JavaScript, React, Redux, Express, Sequelize, Node, Socket.io, HTML, CSS, Git'
               ),
               _react2.default.createElement(
                 'p',
@@ -44022,7 +44022,7 @@ var Resume = function (_React$Component) {
                   { className: 'bold' },
                   'Familiar:'
                 ),
-                ' jQuery, Cheerio, Mocha, Chai, SQL, SEO, Request-Promise, Socket.io'
+                ' WebRTC, jQuery, Cheerio, Mocha, Chai, SQL, SEO, Request-Promise'
               )
             ),
             _react2.default.createElement(
@@ -44108,7 +44108,7 @@ var Resume = function (_React$Component) {
                   _react2.default.createElement(
                     'li',
                     null,
-                    'A live-stream debate app, built with React-Redux, Express, Sequelize, webRTC and Socket.io'
+                    'A live-stream debate app, built with React-Redux, Express, Sequelize, WebRTC and Socket.io'
                   ),
                   _react2.default.createElement(
                     'li',
@@ -44130,6 +44130,48 @@ var Resume = function (_React$Component) {
                 'h3',
                 { className: 'resume-section-head' },
                 'EXPERIENCE'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'resume-item' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'resume-company' },
+                  'Fullstack Academy of Code'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'resume-sub-header' },
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'resume-sub-header-item' },
+                    'Teaching Fellow'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '|'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'resume-sub-header-item' },
+                    'Feb. 2018 - May 2018'
+                  )
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'Mentored and taught 20 student JavaScript concepts and libraries'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'Adminstered technical interviews for prospective students 2-3 times per week'
+                  )
+                )
               ),
               _react2.default.createElement(
                 'div',

@@ -54,7 +54,7 @@ export default class Resume extends React.Component {
                   <p className="resume-sub-header-item">Jan. - Feb. 2018</p>
                 </div>
                 <ul>
-                  <li>A live-stream debate app, built with React-Redux, Express, Sequelize, webRTC and Socket.io</li>
+                  <li>A live-stream debate app, built with React-Redux, Express, Sequelize, WebRTC and Socket.io</li>
                   <li>Used sockets to assemble a functioning chat room for each channel</li>
                   <li>Constructed user and channel pages, set up backend routes, integrated animation</li>
                 </ul>
