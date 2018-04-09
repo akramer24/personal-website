@@ -29,8 +29,8 @@ export default class Resume extends React.Component {
           <div id="resume-body">
             <div id="resume-technologies" className="animated fadeInLeft">
               <h3 className="resume-section-head">TECHNOLOGIES</h3>
-              <p><span className="bold">Proficient:</span> JavaScript, React, Redux, Express, Sequelize, Node, HTML, CSS, Git</p>
-              <p><span className="bold">Familiar:</span> jQuery, Cheerio, Mocha, Chai, SQL, SEO, Request-Promise, Socket.io</p>
+              <p><span className="bold">Proficient:</span> JavaScript, React, Redux, Express, Sequelize, Node, Socket.io, HTML, CSS, Git</p>
+              <p><span className="bold">Familiar:</span> WebRTC, jQuery, Cheerio, Mocha, Chai, SQL, SEO, Request-Promise</p>
             </div>
             <div id="resume-projects" className="animated fadeInLeft">
               <h3 className="resume-section-head">PROJECTS</h3>
@@ -62,6 +62,18 @@ export default class Resume extends React.Component {
             </div>
             <div id="resume-experience" className="animated fadeInLeft">
               <h3 className="resume-section-head">EXPERIENCE</h3>
+              <div className="resume-item">
+                <p className="resume-company">Fullstack Academy of Code</p>
+                <div className="resume-sub-header">
+                  <p className="resume-sub-header-item">Teaching Fellow</p>
+                  <p>|</p>
+                  <p className="resume-sub-header-item">Feb. 2018 - present</p>
+                </div>
+                <ul>
+                  <li>Mentored and taught 20 student JavaScript concepts and libraries</li>
+                  <li>Adminstered technical interviews for prospective students 2-3 times per week</li>
+                </ul>
+              </div>
               <div className="resume-item">
                 <p className="resume-company">Newsday</p>
                 <div className="resume-sub-header">
