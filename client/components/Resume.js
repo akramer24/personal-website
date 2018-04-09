@@ -67,7 +67,7 @@ export default class Resume extends React.Component {
                 <div className="resume-sub-header">
                   <p className="resume-sub-header-item">Teaching Fellow</p>
                   <p>|</p>
-                  <p className="resume-sub-header-item">Feb. 2018 - May 2018</p>
+                  <p className="resume-sub-header-item">Feb. 2018 - present</p>
                 </div>
                 <ul>
                   <li>Mentored and taught 20 student JavaScript concepts and libraries</li>

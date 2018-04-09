@@ -44155,7 +44155,7 @@ var Resume = function (_React$Component) {
                   _react2.default.createElement(
                     'p',
                     { className: 'resume-sub-header-item' },
-                    'Feb. 2018 - May 2018'
+                    'Feb. 2018 - present'
                   )
                 ),
                 _react2.default.createElement(
