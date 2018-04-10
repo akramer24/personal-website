@@ -43935,7 +43935,7 @@ var Resume = function (_React$Component) {
         { className: 'page page-container animated fadeIn' },
         _react2.default.createElement(
           'a',
-          { href: 'https://resume.creddle.io/resume/1iz7bnsm4oa' },
+          { href: 'https://resume.creddle.io/resume/1iz7bnsm4oa', target: '_blank' },
           'View resume as PDF'
         ),
         _react2.default.createElement('iframe', { src: 'https://resume.creddle.io/embed/1iz7bnsm4oa',
