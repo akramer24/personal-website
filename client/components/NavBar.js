@@ -19,8 +19,9 @@ export default function NavBar() {
           <NavItem eventKey={2} onClick={() => navTo('/resume')}>Resume</NavItem>
           <NavDropdown eventKey={3} title="Projects" id="basic-nav-dropdown">
             <MenuItem eventKey={3.1} onClick={() => navTo('/projects')}>All</MenuItem>
-            <MenuItem eventKey={3.2} onClick={() => navTo('/projects/brackapptology')}>Brackapptology</MenuItem>
-            <MenuItem eventKey={3.3} onClick={() => navTo('/projects/bickr')}>Bickr</MenuItem>
+            <MenuItem eventKey={3.2} onClick={() => navTo('/projects/mlb-showdown')}>MLB Showdown</MenuItem>
+            <MenuItem eventKey={3.3} onClick={() => navTo('/projects/brackapptology')}>Brackapptology</MenuItem>
+            <MenuItem eventKey={3.4} onClick={() => navTo('/projects/bickr')}>Bickr</MenuItem>
           </NavDropdown>
         </Nav>
         <Nav pullRight>

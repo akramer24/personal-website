@@ -19,6 +19,13 @@ export default class AllProjects extends React.Component {
               </p>
           </div>
           <Carousel className="carousel-body">
+            <Carousel.Item onClick={() => navTo('/projects/mlb-showdown')}>
+              <img src="/showdown-ss-1.png" />
+              <Carousel.Caption>
+                <h3>MLB Showdown</h3>
+                <p>An online baseball card game.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
             <Carousel.Item onClick={() => navTo('/projects/brackapptology')}>
               <img src="/brackapptology-ss-1.jpeg" />
               <Carousel.Caption>

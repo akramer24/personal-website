@@ -7060,6 +7060,12 @@ Object.defineProperty(exports, 'Bickr', {
     return _Projects.Bickr;
   }
 });
+Object.defineProperty(exports, 'Showdown', {
+  enumerable: true,
+  get: function get() {
+    return _Projects.Showdown;
+  }
+});
 
 var _Resume = __webpack_require__(352);
 
@@ -28448,6 +28454,7 @@ function Routes(props) {
         _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _components.About }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/resume', component: _components.Resume }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects', component: _components.AllProjects }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/projects/mlb-showdown', component: _components.Showdown }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/projects/brackapptology', component: _components.Brackapptology }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/projects/bickr', component: _components.Bickr })
       )
@@ -43400,13 +43407,20 @@ function NavBar() {
           _react2.default.createElement(
             _reactBootstrap.MenuItem,
             { eventKey: 3.2, onClick: function onClick() {
+                return (0, _navTo2.default)('/projects/mlb-showdown');
+              } },
+            'MLB Showdown'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.MenuItem,
+            { eventKey: 3.3, onClick: function onClick() {
                 return (0, _navTo2.default)('/projects/brackapptology');
               } },
             'Brackapptology'
           ),
           _react2.default.createElement(
             _reactBootstrap.MenuItem,
-            { eventKey: 3.3, onClick: function onClick() {
+            { eventKey: 3.4, onClick: function onClick() {
                 return (0, _navTo2.default)('/projects/bickr');
               } },
             'Bickr'
@@ -43471,6 +43485,15 @@ Object.defineProperty(exports, 'Bickr', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_Bickr).default;
+  }
+});
+
+var _Showdown = __webpack_require__(354);
+
+Object.defineProperty(exports, 'Showdown', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Showdown).default;
   }
 });
 
@@ -43547,6 +43570,27 @@ var AllProjects = function (_React$Component) {
           _react2.default.createElement(
             _reactBootstrap.Carousel,
             { className: 'carousel-body' },
+            _react2.default.createElement(
+              _reactBootstrap.Carousel.Item,
+              { onClick: function onClick() {
+                  return (0, _navTo2.default)('/projects/mlb-showdown');
+                } },
+              _react2.default.createElement('img', { src: '/showdown-ss-1.png' }),
+              _react2.default.createElement(
+                _reactBootstrap.Carousel.Caption,
+                null,
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'MLB Showdown'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'An online baseball card game.'
+                )
+              )
+            ),
             _react2.default.createElement(
               _reactBootstrap.Carousel.Item,
               { onClick: function onClick() {
@@ -43988,6 +44032,133 @@ function Main(props) {
     )
   );
 }
+
+/***/ }),
+/* 354 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBootstrap = __webpack_require__(28);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Showdown = function (_React$Component) {
+  _inherits(Showdown, _React$Component);
+
+  function Showdown() {
+    _classCallCheck(this, Showdown);
+
+    return _possibleConstructorReturn(this, (Showdown.__proto__ || Object.getPrototypeOf(Showdown)).apply(this, arguments));
+  }
+
+  _createClass(Showdown, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'page page-container animated fadeIn' },
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { md: 6, sm: 8, xs: 12 },
+          _react2.default.createElement(
+            'div',
+            { className: 'project-header' },
+            _react2.default.createElement(
+              'h3',
+              null,
+              'MLB Showdown ',
+              _react2.default.createElement(
+                'small',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { target: '_blank', href: 'https://mlb-showdown-2018.herokuapp.com/' },
+                  '(Try it here)'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'project-subheader' },
+              'An online baseball card game.'
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Carousel,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.Carousel.Item,
+              null,
+              _react2.default.createElement('img', { src: '/showdown-ss-1.png' })
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Carousel.Item,
+              null,
+              _react2.default.createElement('img', { src: '/showdown-ss-2.png' })
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Carousel.Item,
+              null,
+              _react2.default.createElement('img', { src: '/showdown-ss-3.png' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'project-body' },
+            _react2.default.createElement(
+              'h5',
+              { className: 'project-section-head' },
+              'Why did I build this app?'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'My brother and I used to play MLB Showdown -- the greatest card game ever -- when we were younger. When the game went out of print about 13 years ago, we were devastated. This online version is the next best thing.'
+            ),
+            _react2.default.createElement(
+              'h5',
+              { className: 'project-section-head' },
+              'How does it work?'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Users can buy packs of cards and pit their team against someone else\'s on a game-board rendered by React and React-Redux. Game state is transferred from client to client via Socket.io, and players can talk smack in the WebRTC video chat.'
+            ),
+            _react2.default.createElement('br', null)
+          )
+        )
+      );
+    }
+  }]);
+
+  return Showdown;
+}(_react2.default.Component);
+
+exports.default = Showdown;
 
 /***/ })
 /******/ ]);
