@@ -44,6 +44,8 @@ p {
 
 #navbar a {
   color: #e3e3e3;
+  transition: 1s;
+  -webkit-transition: 1s;
 }
 
 #navbar a:hover {
@@ -59,7 +61,9 @@ p {
 }
 
 .navbar-link {
-  color: #e3e3e3
+  color: #e3e3e3;
+  transition: 1s;
+  -webkit-transition: 1s;
 }
 
 .navbar-link:hover {
