@@ -9,7 +9,8 @@
     "lint": "eslint ./ --ignore-path .gitignore",
     "start": "node server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
-    "start-server": "nodemon server -e html,js,scss --ignore public"
+    "start-server": "nodemon server -e html,js,scss --ignore public",
+    "test": "mocha client/test ./client/**/*.spec.js --require babel-core/register --require ./client/test/setup.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,9 @@
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "express": "^4.16.2",
     "history": "^4.7.2",
     "pg": "^7.4.1",

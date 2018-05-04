@@ -256,4 +256,8 @@ p {
   .middle {
     opacity: 1;
   }
+
+  .carousel-inner {
+    height: 169px;
+  }
 }
