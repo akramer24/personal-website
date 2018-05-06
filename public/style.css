@@ -285,6 +285,7 @@ p {
 
 .blog-post h3 {
   color: #8c8c8c;
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
