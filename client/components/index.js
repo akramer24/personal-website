@@ -4,3 +4,4 @@ export { default as NavBar } from './NavBar';
 export { AllProjects, Brackapptology, Bickr, Showdown } from './Projects';
 export { default as Resume } from './Resume';
 export { default as Main } from './Main';
+export { default as Blog } from './Blog';

@@ -15,7 +15,7 @@ export default class AllProjects extends React.Component {
           <div id="all-projects-header">
             <h3>These are my projects.</h3>
             <p>
-              For more detailed information on each one, please click anywhere on the imamge or description.
+              For more detailed information on each one, please click anywhere on the image or description.
               </p>
           </div>
           <Carousel className="carousel-body">
