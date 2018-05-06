@@ -17,15 +17,15 @@ export default class About extends React.Component {
         </Col>
         <Col id="about-body" md={6} sm={8} xs={12}>
           <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;I am a software engineer who has built several projects with React, React-Redux, Node, Express, Sequelize
+          I am a software engineer who has built several projects with React, React-Redux, Node, Express, Sequelize
             and many more technologies.
           </p>
           <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;In my previous life as a sports journalist, I used my persistence, creativity and precision every day to pursue, craft and submit a
+          In my previous life as a sports journalist, I used my persistence, creativity and precision every day to pursue, craft and submit a
             story. I love using those skills as a software engineer to develop products that make people’s days easier and more enjoyable.
           </p>
           <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;I am currently pursuing a full-time developer job. If you are interested, please see<NavLink to="/resume"> my resume.</NavLink>
+          I am currently pursuing a full-time developer job. If you are interested, please see<NavLink to="/resume"> my resume.</NavLink>
           </p>
           <div id="about-images-container">
             <div className="home-image-container">
