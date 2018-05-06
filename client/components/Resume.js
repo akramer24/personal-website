@@ -11,7 +11,7 @@ export default class Resume extends React.Component {
     return (
       <div className="page page-container animated fadeIn">
         <a href="https://resume.creddle.io/resume/1iz7bnsm4oa" target="_blank">View resume as PDF</a>
-        <iframe src="https://resume.creddle.io/embed/1iz7bnsm4oa"
+        <iframe id="resume" src="https://resume.creddle.io/embed/1iz7bnsm4oa"
           width="850" height="1100" seamless></iframe>
       </div>
     )

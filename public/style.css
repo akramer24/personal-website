@@ -305,4 +305,14 @@ p {
   .carousel-inner {
     height: 169px;
   }
+
+  #blog-column {
+    padding: 40px;
+    position: absolute;
+    top: 15px;
+  }
+
+  #resume {
+    width: 360px;
+  }
 }

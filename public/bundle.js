@@ -44065,7 +44065,7 @@ var Resume = function (_React$Component) {
           { href: 'https://resume.creddle.io/resume/1iz7bnsm4oa', target: '_blank' },
           'View resume as PDF'
         ),
-        _react2.default.createElement('iframe', { src: 'https://resume.creddle.io/embed/1iz7bnsm4oa',
+        _react2.default.createElement('iframe', { id: 'resume', src: 'https://resume.creddle.io/embed/1iz7bnsm4oa',
           width: '850', height: '1100', seamless: true })
       );
     }
@@ -44142,7 +44142,7 @@ function Blog() {
     { id: 'blog-container' },
     _react2.default.createElement(
       _reactBootstrap.Col,
-      { md: 6, sm: 8, xs: 12 },
+      { id: 'blog-column', md: 6, sm: 8, xs: 12 },
       _react2.default.createElement(
         'div',
         { className: 'blog-post' },

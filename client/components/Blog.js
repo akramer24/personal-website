@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 export default function Blog() {
   return (
     <div id="blog-container">
-      <Col md={6} sm={8} xs={12}>
+      <Col id="blog-column" md={6} sm={8} xs={12}>
         <div className="blog-post">
           <h3>Taking the leap into coding was the best decision of my life</h3>
           <p>I’m a sports-writer-turned-software-engineer. I know. You don’t see that every day.</p>
